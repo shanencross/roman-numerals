@@ -1,6 +1,10 @@
 function romanNumeral(number) {
-	if (number === 1) {
-		return "I";
+	if (number >= 1 && number <= 4) {
+		result = ""
+    for (let i=0; i < number; i+=1) {
+			result += "I";
+		}
+		return result;
 	} else if (number === 5) {
     return "V";
   } else if (number === 10) {
